@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+}
+body {
+  max-width: 1168px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  align-items: center;
+  padding: 20px 0px;
+}
+.HLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.HLeft div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.HLeft p:hover {
+  border-bottom: 2px solid green;
+  cursor: pointer;
+}
+
+.HRight {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.HRight p {
+  font-size: 18px;
+}
+
+.icon {
+  display: none;
+}
+
+@media (max-width: 426px) {
+  .HRight {
+    display: none;
+  }
+  .HLeft div {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+
+  header {
+    padding: 20px;
+  }
+}
